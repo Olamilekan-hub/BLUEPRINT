@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUEPRINT HORIZON</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="home">BLUEPRINT HORIZON</h1>
+            <nav>
+                <ul>
+                    <li><a class="home" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <section id="about" class="hero">
+        <div class="container">
+            <div class="text-container">
+                <h2 class="sliding-text">WELCOME TO </h2>
+                <h2 class="sliding-text">BLUEPRINT HORIZON</h2>
+            </div>
+            <div>
+                <p id="delayedParagraph" class="p">Welcome to Blueprint Horizon, it's where your Blueprint meet Horizon and get made into something bigger than just a Blueprint.</p>
+            </div>
+            <!-- <a href="#signup" class="btn">Get Started</a> -->
+        </div>
+        </section>
+        <section id="services" class="container1">
+        <h3>Our Services:</h3>
+        <hr>
+        <div class="cards">
+            <div>
+                <h4>Service 1</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            </div>
+            <div>
+                <h4>Service 2</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            </div>
+            <div>
+                <h4>Service 3</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div>
+                <h4>Service 3</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            </div>
+            <div>
+                <h4>Service 4</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            </div>
+            <div>
+                <h4>Service 5</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            </div>
+        </div>
+        </section>
+        <section id="contact" class="container1">
+        <h3>Contact:</h3>
+        <hr>
+        </section>
+    </main>
+    <footer class="fl">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> <a href="#home">BLUEPRINT HORIZON</a> All rights reserved.</p>
+            <div>
+                <ul>
+                    <li><a href="https://twitter.com/"><img src="./twitter.png" height="30" alt="Twitter"></a></li>
+                    <li><a href="https://instagram.com/"><img src="./instagram.png" height="30" alt="Instagram"></a></li>
+                    <li><a href="https://facebook.com/"><img src="./facebook (3).png" height="40" alt="Facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        });
+
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('delayedParagraph').style.display = 'block';
+            }, 1900); 
+        };
+    </script>
+</body>
+</html>
