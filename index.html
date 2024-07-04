@@ -9,8 +9,11 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1 id="home">BLUEPRINT HORIZON</h1>
+        <div id="home" class="container">
+            <div>
+                <img src="./Untitled-5-Recovered-removebg-preview.png" height="70" alt="Blueprint logo">
+                <h1 id="home">BLUEPRINT HORIZON</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a class="home" href="#home">Home</a></li>
@@ -23,56 +26,63 @@
         <hr>
     </header>
     <main>
-        <section id="about" class="hero">
-        <div class="container">
+        <section class="hero">
+        <div id="about" class="container">
             <div class="text-container">
                 <h2 class="sliding-text">WELCOME TO </h2>
                 <h2 class="sliding-text">BLUEPRINT HORIZON</h2>
             </div>
             <div>
-                <p id="delayedParagraph" class="p">Welcome to Blueprint Horizon, it's where your Blueprint meet Horizon and get made into something bigger than just a Blueprint.</p>
+                <p id="delayedParagraph" class="p">Welcome to Blueprint Horizon, it's a place where your Blueprint meet Horizon and get made into something bigger than just a Blueprint...</p>
             </div>
             <!-- <a href="#signup" class="btn">Get Started</a> -->
         </div>
         </section>
+
         <section id="services" class="container1">
         <h3>Our Services:</h3>
         <hr>
         <div class="cards">
             <div>
-                <h4>Service 1</h4>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <h4>Advertising Your Brand</h4>
+                <p>Running targeted advertising campaigns can significantly boost your brand's visibility and reach. We can craft and execute strategic ad campaigns tailored to your specific audience, ensuring maximum engagement and conversion. Let us help you elevate your brand and achieve your marketing goals with precision and impact.</p>
             </div>
             <div>
-                <h4>Service 2</h4>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <h4>Building Your Brand's Website</h4>
+                <p>In today's digital world, having a robust online presence is crucial for brand success. We specialize in creating professional websites that elevate your brand and engage your target audience, ensuring your business stands out in the competitive online landscape.</p>
             </div>
             <div>
-                <h4>Service 3</h4>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <h4>Brand Content Creation</h4>
+                <p>Creating high-quality, engaging content is essential for effectively advertising your brand. It builds credibility, attracts your target audience, and promotes brand loyalty. Let us help you develop content that resonates with your customers and amplifies your brand's presence.</p>
             </div>
         </div>
         <div class="cards">
             <div>
-                <h4>Service 3</h4>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <h4>Social Media Management</h4>
+                <p>Enhance your brand’s online presence with expert social media management. We strategize, create, and manage your social media campaigns to effectively engage your audience and drive brand growth.</p>
             </div>
             <div>
-                <h4>Service 4</h4>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <h4>Virtual Assistant Services</h4>
+                <p>Enhance your brand's efficiency and productivity with our comprehensive virtual assistant services. Streamline operations, manage tasks seamlessly, and focus on growth while we handle the details.</p>
             </div>
             <div>
-                <h4>Service 5</h4>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <h4>Professional Graphic Design</h4>
+                <p>Enhance your brand's identity with our expert graphic design services. We create visually compelling designs tailored to elevate your brand and captivate your audience.</p>
             </div>
         </div>
         </section>
         <section id="contact" class="container1">
-        <h3>Contact:</h3>
+        <h3>Contact Us</h3>
         <hr>
         </section>
     </main>
-    <footer class="fl">
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> <a href="#home">BLUEPRINT HORIZON</a> All rights reserved.</p>
+            <img src="./blprnt-removebg-preview.png" height="70" alt="Blueprint logo">
+        </div>
+    </footer>
+    <!-- <footer class="fl">
         <div class="container">
             <p>&copy; <span id="current-year"></span> <a href="#home">BLUEPRINT HORIZON</a> All rights reserved.</p>
             <div>
@@ -83,7 +93,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var currentYear = new Date().getFullYear();
