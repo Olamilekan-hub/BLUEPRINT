@@ -14,12 +14,33 @@
                 <img src="./Untitled-5-Recovered-removebg-preview.png" height="70" alt="Blueprint logo">
                 <h1 id="home">BLUEPRINT HORIZON</h1>
             </div>
-            <nav>
+            <button id="openMenuBtn"><img class="but" src="./menu.png" alt="Open Menu"></button>
+            <nav class="idd"> 
                 <ul>
-                    <li><a class="home" href="#home">Home</a></li>
+                    <li><a class="home" href="./index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menu">
+            <div class="mb">
+                <h1 id="home">BLUEPRINT HORIZON</h1>
+                <!-- <img src="./Untitled-5-Recovered-removebg-preview.png" height="70" alt="Blueprint logo"> -->
+                <button id="closeMenuBtn"><img class="but1" src="./close.png" alt="Close Menu"></button>
+            </div>
+            <hr class="bt">
+            <nav>
+                <ul>
+                    <li class="li"><a href="./index.html">Home</a></li>
+                    <hr>
+                    <li class="li"><a href="#about">About</a></li>
+                    <hr>
+                    <li class="li"><a href="#services">Services</a></li>
+                    <hr>
+                    <li class="li"><a href="#contact">Contact</a></li>
+                    <hr>
                 </ul>
             </nav>
         </div>
@@ -55,8 +76,7 @@
                 <h4>Brand Content Creation</h4>
                 <p>Creating high-quality, engaging content is essential for effectively advertising your brand. It builds credibility, attracts your target audience, and promotes brand loyalty. Let us help you develop content that resonates with your customers and amplifies your brand's presence.</p>
             </div>
-        </div>
-        <div class="cards">
+            
             <div>
                 <h4>Social Media Management</h4>
                 <p>Enhance your brand’s online presence with expert social media management. We strategize, create, and manage your social media campaigns to effectively engage your audience and drive brand growth.</p>
@@ -72,8 +92,13 @@
         </div>
         </section>
         <section id="contact" class="container1">
-        <h3>Contact Us</h3>
+        <h3 class="cona">Contact Us</h3>
         <hr>
+        <div class="con">
+            <h4>Require our top notch services</h4>
+            <p>Get in touch with our team, send us a mail describing the service you need, <b>tap the link below</p>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=blueprinthorizonindustries@gmail.com">blueprinthorizonindustries@gmail.com</a></p>
+        </div>
         </section>
     </main>
     <footer>
@@ -105,6 +130,28 @@
                 document.getElementById('delayedParagraph').style.display = 'block';
             }, 1900); 
         };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var openMenuBtn = document.getElementById('openMenuBtn');
+            var closeMenuBtn = document.getElementById('closeMenuBtn');
+            var menu = document.getElementById('menu');
+            var li = document.getElementsByClassName('li');
+
+            openMenuBtn.addEventListener('click', function() {
+                menu.classList.add('open');
+            });
+
+            closeMenuBtn.addEventListener('click', function() {
+                menu.classList.remove('open');
+            });
+
+            Array.prototype.forEach.call(li, function(li) {
+                li.addEventListener('click', function() {
+                    menu.classList.remove('open');
+                });
+            }); 
+        });
+
     </script>
 </body>
 </html>
